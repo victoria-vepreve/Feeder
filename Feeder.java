@@ -14,11 +14,11 @@ public class Feeder {
      */
     public void simulateOneDay(int numBirds)
     {
-        int birdorbear = (Math.random() * 100);
-            if (birdorbear < 95)
-                {
-                    
-                }
+        // int birdorbear = (Math.random() * 100);
+        //     if (birdorbear < 95)
+        //         {
+
+        //         }
     }
 
     /**
