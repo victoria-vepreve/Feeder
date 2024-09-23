@@ -32,20 +32,30 @@ public class Feeder {
     public int simulateManyDays(int numBirds, int numDays) 
     {
         int days = 0;
-        return 0;
+        while(numDays > 0)
+        {
+            simulateOneDay(numBirds);
+            numDays--;
+            days++;
+            if(currentFood ==0 ) return days;
+        }
+        return days;
     }
 
-    public int getCurrentFood()
-        {
-            return currentFood;
-        }
-    
-    public Feeder(int c)
-    {
-        currentFood = c;
-    }
+    // private int getCurrentFood;
+
     public String toString()
     {
         return "Current Food: " + currentFood;
     }
+    public int getCurrentFood()
+        {
+            return currentFood;
+        }
+
+    public Feeder(int c)
+    {
+        currentFood = c;
+    }
+
 }
